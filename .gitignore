@@ -1,0 +1,5 @@
+# interiJ 
+.idea/*
+
+# compiled file
+*a.out
