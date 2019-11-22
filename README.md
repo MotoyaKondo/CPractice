@@ -9,7 +9,9 @@ B言語という、Compile Based Language の時世代の言語として誕生�
 低級から高級まで幅広い言語に対応する知識が必要なので、難しい言語ではあるがプログラミングを理解する上重要な言語である。
 
 ## Tutorials
+
 - Dotinstall (dotinstall.c)<br>
+**file name dotinstall.c**<br>
 Dotinstall の Tutorial.<br>
 https://dotinstall.com/lessons/basic_c<br>
 基本的な文法の確認<br>
