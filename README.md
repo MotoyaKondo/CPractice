@@ -34,7 +34,7 @@ https://dotinstall.com/lessons/basic_c
 ### 静岡理工科大学 C/C++ 演習問題
 https://www.sist.ac.jp/~suganuma/learn/enshu.htm
 
-**file: sizuokaExercises.c**
+**files: sizuokaExercises/chapter[1-16].c**
 
 **contents:**
 
