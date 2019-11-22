@@ -29,8 +29,6 @@ https://dotinstall.com/lessons/basic_c
 - ポインタとメモリ空間
 - 参照渡し
 
----
-
 ### 静岡理工科大学 C/C++ 演習問題
 https://www.sist.ac.jp/~suganuma/learn/enshu.htm
 
