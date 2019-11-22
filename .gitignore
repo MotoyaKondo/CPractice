@@ -1,5 +1,7 @@
 # interiJ 
 .idea/*
+CMake*
+cmake*
 
 # compiled file
 *a.out
