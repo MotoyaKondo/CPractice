@@ -281,7 +281,7 @@ int pointerUsage(void){
      * assert( pround == proundup );
      *
      *
-     * また関数の引数を pointer to type にすることで、メモリを節約することができる。
+     * また関数の引数を pointer to type にすることで、メモリを節約することができる
      * (渡してきた値の引数をそのまま利用することができる。)
      */
 
