@@ -63,5 +63,5 @@ C言語で重要になる概念であるポインタについて、様々な資�
 **contents:**
 
 **references:**
-- 工学院大学 非情報学生のための C/C++ 入門<br>
-https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/index.html
+- 工学院大学 非情報学生のための C/C++ 入門 
+[link](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/index.html)
