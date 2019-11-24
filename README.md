@@ -52,3 +52,16 @@ https://www.sist.ac.jp/~suganuma/learn/enshu.htm
 - 第14章　テンプレート
 - 第15章　クラスメンバーに対するポインタ
 - 第16章　入出力クラス
+
+
+### Pointerについて
+
+C言語で重要になる概念であるポインタについて、様々な資料にあたりつつ学習する。
+
+**files: learnPointer.c**
+
+**contents:**
+
+**references:**
+- 工学院大学 非情報学生のための C/C++ 入門<br>
+https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/index.html
