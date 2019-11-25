@@ -65,3 +65,13 @@ C言語で重要になる概念であるポインタについて、様々な資�
 **references:**
 - 工学院大学 非情報学生のための C/C++ 入門 
 [link](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/index.html)
+
+
+## Tips
+
+**C言語でのデバッグ方法**<br>
+Segmentation fault が throw された時の解消法について。<br>
+https://minus9d.hatenablog.com/entry/20140121/1390314231
+
+**C言語で用いられる演算子の展開順序に関する注意** [link](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/04-02.html)
+~~~~
