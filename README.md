@@ -71,7 +71,8 @@ C言語で重要になる概念であるポインタについて、様々な資�
 
 **C言語でのデバッグ方法**<br>
 Segmentation fault が throw された時の解消法について。<br>
-https://minus9d.hatenablog.com/entry/20140121/1390314231
+https://minus9d.hatenablog.com/entry/20140121/1390314231<br>
+gcb (デバッガ)の利用方法<br>
+https://qiita.com/arene-calix/items/a08363db88f21c81d351
 
 **C言語で用いられる演算子の展開順序に関する注意** [link](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/04-02.html)
-~~~~
