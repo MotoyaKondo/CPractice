@@ -3,13 +3,15 @@
 // Mention Definition of Functions
 int integerAndFloat();
 int scanUsage(int * number);
-int forArithmeticOperation(int * number, int ** result[]);
-
+int forArithmeticOperation(int number1, int number2);
+float getTrapezoidArea(int up, int bottom, int height);
+int divideNumber(int number);
 
 // Main Function
 int main(void){
 
     // variables
+    int i;
     int * number;
 
     /*
@@ -44,29 +46,36 @@ int main(void){
 
     /*
      * Question3:
-     * 四則演算を計算するプログラム
-     * int forArithmeticOperation(int * number);
+      * 四則演算を計算するプログラム
+     * int forArithmeticOperation(int number1, int number2, int * ans);
      *
      * 概要:
      * 引数の(int * a) では、aはアドレスを指している。
      * int * a; と初期化したら a を渡せば良いし、int a なら &a を渡せば良い。
-     *
      */
-//    printf("--------------- question3 ----------------\n");
-//    *number = 10;
-//
-//    int ** result[4];
-//    int i;
-//    char operands[4] = {'+', '-', '*', '/'};
-//
-//    forArithmeticOperation(number, result);
-//
-//    for (i=0;i<4;i++){
-//        printf("result %d %c 5 = %d", *number, operands[i], **result[i]);
-//    }
-//    printf("------------------------------------------\n\n\n");
+    printf("--------------- question3 ----------------\n");
+    forArithmeticOperation(1, 2);
+    printf("------------------------------------------\n\n\n");
 
+    /* Question4:
+     * 上底、下底、高さ を入力として与え、台形の面積を求める関数を作成せよ。
+     * float getTrapezoidArea(int up, int bottom, int height);
+     */
+    printf("--------------- question4 ----------------\n");
+    float area = getTrapezoidArea(2, 3, 7);
+    printf("trapezoid area is %0.1f\n", area);
+    printf("------------------------------------------\n\n\n");
 
+    /* Question5:
+     *  5 桁の整数（最初の数字は必ず 0 でない）を入力するものとする．
+     *  それを各桁毎に分解し，間に 1 つ以上の空白をあけて出力し，
+     *  次の行に，各桁の数字を逆順に 1 つ以上の空白をあけて出力するプログラムを書け．
+     * int divideNumber(int number);
+     */
+    printf("--------------- question5 ----------------\n");
+    *number = 54321;
+    divideNumber(*number);
+    printf("------------------------------------------\n\n\n");
 
     return 0;
 }
@@ -96,14 +105,39 @@ int scanUsage(int * number){
     return 0;
 }
 
-//int forArithmeticOperation(int * number, int ** result[]){
-//
-//    int baseNumber = 5;
-//
-//    **result[0] = *number + baseNumber;
-//    **result[1] = *number - baseNumber;
-//    **result[2] = *number * baseNumber;
-//    **result[3] = *number / baseNumber;
-//
-//    return 0;
-//}
+int forArithmeticOperation(int number1, int number2){
+    printf("%d + %d = %d\n", number1, number2, number1+number2);
+    printf("%d - %d = %d\n", number1, number2, number1-number2);
+    printf("%d * %d = %d\n", number1, number2, number1*number2);
+    printf("%d / %d = %d\n", number1, number2, number1/number2);
+    return 0;
+}
+
+float getTrapezoidArea(int up, int bottom, int height){
+    return  ((float) up + bottom) * (float) height / 2.0;
+}
+
+int divideNumber(int number){
+
+    int digits[5], i;
+
+    digits[0] = number / 10000;
+    digits[1] = (number % 10000) / 1000;
+    digits[2] = (number % 1000) / 100;
+    digits[3] = (number % 100) / 10;
+    digits[4] = (number % 10);
+
+    printf("divide number is ");
+    for(i=0;i<4;i++){
+        printf("%d ", digits[i]);
+    }
+    printf("%d\n", digits[4]);
+
+    printf("reversed it");
+    for(i=4;i>0;i--){
+        printf("%d ", digits[i]);
+    }
+    printf("%d\n", digits[0]);
+
+    return 0;
+}
