@@ -77,4 +77,8 @@ https://qiita.com/arene-calix/items/a08363db88f21c81d351<br>
 KeyChain の作成方法<br>
 https://qiita.com/takahashim/items/204ffa698afe09bd4e28
 
-**C言語で用いられる演算子の展開順序に関する注意** [link](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/04-02.html)
+**C言語で用いられる演算子の展開順序に関する注意**<br> 
+[link](https://brain.cc.kogakuin.ac.jp/~kanamaru/lecture/prog1/04-02.html)
+
+**コンピュータアーキテクチャ**<br>
+メモリの構造 https://www.cqpub.co.jp/interface/sample/200602/if0602_chap1.pdf
