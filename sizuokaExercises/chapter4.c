@@ -4,13 +4,16 @@
 int introOfPointer(void);
 int trail1(void);
 int introOfConditionOperator(void);
+int bitOperand(void);
 
 // main function
 int main(void){
 //    introOfPointer();
 //    trail1();
-    introOfConditionOperator();
+//    introOfConditionOperator();
+    bitOperand();
 }
+
 
 // function def
 int introOfPointer(void){
@@ -114,6 +117,61 @@ int introOfConditionOperator(void){
     for(i=0;i<8;i++){
         printf("result %d is %d\n", i, results[i]);
     }
+
+    return 0;
+}
+
+
+int bitOperand(void){
+    /* --------------- #5. Bit Operand ----------------
+     *
+     * bit を計算するための演算子。
+     * 処理速度が速かったり、メモリの使用量が少ないという特徴がある。
+     *
+     * Bit Operand の種類
+     * 1. &: AND演算子
+     * 2. |: OR演算子
+     * 3. ^: XOR演算子(排他的論理和)
+     * 4. ~: NOT演算子
+     * 5. >>: 全てのbitの桁を右に移動する(右shift)
+     * 6. <<: 全てのbitの桁を左に移動する(左shift)
+     *
+     * --------------- #6. unsigned 型について ----------------
+     * C言語では unsigned 型を持っている。
+     * http://program-lecture.info/c_bit3.html
+     * signed -128 to 128
+     * unsigned 0 to 256
+     */
+
+    char c = 'A';
+    unsigned char uc;
+
+    printf("%c\n", c);
+
+    // increment(ASCII で次のchar が参照される。)
+    c ++;
+    printf("%c\n", c);
+
+    // right shift 0x41 -> 0x33?
+    c >>=1;
+    printf("%c\n", c);
+
+    // use not operator
+    c = ~c + 1;
+    printf("%c\n", c);
+
+    printf("%d\n", (int) c);
+
+    // cast to unsigned
+    uc = (unsigned char) c;
+    printf("%d\n", (int)uc);
+
+    // right shift
+    uc >>= 4;
+    c >>= 4;
+    printf("c(%d) uc(%d)\n", (int)c, (int)uc);
+
+
 
     return 0;
 }
